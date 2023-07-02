@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\weihu\\Desktop\\CodingDojo\\C_Sharp_Private\\fundamental\\fundamentalsI\\fundamentalsI.csproj",
+      "projectUniqueName": "C:\\Users\\weihu\\Desktop\\CodingDojo\\C_Sharp_Public\\fundamental\\fundamentals-I\\fundamentalsI.csproj",
       "projectName": "fundamentalsI",
-      "projectPath": "C:\\Users\\weihu\\Desktop\\CodingDojo\\C_Sharp_Private\\fundamental\\fundamentalsI\\fundamentalsI.csproj",
+      "projectPath": "C:\\Users\\weihu\\Desktop\\CodingDojo\\C_Sharp_Public\\fundamental\\fundamentals-I\\fundamentalsI.csproj",
       "packagesPath": "C:\\Users\\weihu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\weihu\\Desktop\\CodingDojo\\C_Sharp_Private\\fundamental\\fundamentalsI\\obj\\",
+      "outputPath": "C:\\Users\\weihu\\Desktop\\CodingDojo\\C_Sharp_Public\\fundamental\\fundamentals-I\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\weihu\\AppData\\Roaming\\NuGet\\NuGet.Config"

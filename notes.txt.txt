@@ -7,3 +7,7 @@
 	mkdir FirstCSharp
 	cd FirstCSharp
 	dotnet new console
+
+-- To run the application
+
+	dotnet run
