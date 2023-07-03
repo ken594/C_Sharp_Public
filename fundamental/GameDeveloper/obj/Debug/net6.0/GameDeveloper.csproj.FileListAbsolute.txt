@@ -1,0 +1,15 @@
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\GameDeveloper\obj\Debug\net6.0\GameDeveloper.csproj.AssemblyReference.cache
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\GameDeveloper\obj\Debug\net6.0\GameDeveloper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\GameDeveloper\obj\Debug\net6.0\GameDeveloper.AssemblyInfoInputs.cache
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\GameDeveloper\obj\Debug\net6.0\GameDeveloper.AssemblyInfo.cs
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\GameDeveloper\obj\Debug\net6.0\GameDeveloper.csproj.CoreCompileInputs.cache
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\GameDeveloper\bin\Debug\net6.0\GameDeveloper.exe
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\GameDeveloper\bin\Debug\net6.0\GameDeveloper.deps.json
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\GameDeveloper\bin\Debug\net6.0\GameDeveloper.runtimeconfig.json
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\GameDeveloper\bin\Debug\net6.0\GameDeveloper.dll
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\GameDeveloper\bin\Debug\net6.0\GameDeveloper.pdb
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\GameDeveloper\obj\Debug\net6.0\GameDeveloper.dll
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\GameDeveloper\obj\Debug\net6.0\refint\GameDeveloper.dll
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\GameDeveloper\obj\Debug\net6.0\GameDeveloper.pdb
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\GameDeveloper\obj\Debug\net6.0\GameDeveloper.genruntimeconfig.cache
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\GameDeveloper\obj\Debug\net6.0\ref\GameDeveloper.dll
