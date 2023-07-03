@@ -1,0 +1,15 @@
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\DebuggingPractice\obj\Debug\net6.0\DebuggingPractice.csproj.AssemblyReference.cache
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\DebuggingPractice\obj\Debug\net6.0\DebuggingPractice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\DebuggingPractice\obj\Debug\net6.0\DebuggingPractice.AssemblyInfoInputs.cache
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\DebuggingPractice\obj\Debug\net6.0\DebuggingPractice.AssemblyInfo.cs
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\DebuggingPractice\obj\Debug\net6.0\DebuggingPractice.csproj.CoreCompileInputs.cache
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\DebuggingPractice\bin\Debug\net6.0\DebuggingPractice.exe
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\DebuggingPractice\bin\Debug\net6.0\DebuggingPractice.deps.json
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\DebuggingPractice\bin\Debug\net6.0\DebuggingPractice.runtimeconfig.json
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\DebuggingPractice\bin\Debug\net6.0\DebuggingPractice.dll
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\DebuggingPractice\bin\Debug\net6.0\DebuggingPractice.pdb
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\DebuggingPractice\obj\Debug\net6.0\DebuggingPractice.dll
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\DebuggingPractice\obj\Debug\net6.0\refint\DebuggingPractice.dll
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\DebuggingPractice\obj\Debug\net6.0\DebuggingPractice.pdb
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\DebuggingPractice\obj\Debug\net6.0\DebuggingPractice.genruntimeconfig.cache
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\DebuggingPractice\obj\Debug\net6.0\ref\DebuggingPractice.dll
