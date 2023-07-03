@@ -45,13 +45,15 @@ Console.WriteLine("--------------------");
 
 
 // Roll until it lands on a certain result and tracks how many rolls occurred
-static int GetNumInput()
+static int GetUserInput(int max, bool state)
 {
     int num = -1;
     // make sure the input is inbound
-    while (num < 0 || num > 6)
+    while (num < 0 || num > max)
     {
-        Console.WriteLine("Please enter a valid integer between 1 and 6");
+        string outputMessage = state ? "What is the size of the dice?" : "What is the target number?";
+        Console.WriteLine(outputMessage);
+        Console.WriteLine($"Please enter a valid integer between 1 and {max}");
         if (Int32.TryParse(Console.ReadLine(), out int j))
         {
             Console.WriteLine($"You enter: {j}");
@@ -61,13 +63,13 @@ static int GetNumInput()
     return num;
 }
 
-static int GetCount(int target)
+static int GetCount(int size, int target)
 {
     int dice = -1;
     int count = 0;
     while (dice != target)
     {
-        dice = RollDice();
+        dice = RollDice(size);
         count++;
     }
     return count;
@@ -78,10 +80,24 @@ static void PrintResult(int number, int count)
     Console.WriteLine($"Rolled a {number} after {count} tries.");
 }
 
+static int[] UserInputState()
+{
+    bool state = true;
+    int[] data = new int[2];
+    // get the size of the dice
+    data[0] = GetUserInput(100, state);
+    state = !state;
+    // get the target number of the dice
+    data[1] = GetUserInput(data[0], state);
+    return data;
+}
+
 static void GameBoard()
 {
-    int target = GetNumInput();
-    int count = GetCount(target);
-    PrintResult(target, count);
+    int[] data = UserInputState();
+    // data[0] is the size of the dice
+    // data[1] is the target number
+    int count = GetCount(data[0], data[1]);
+    PrintResult(data[1], count);
 }
 GameBoard();
