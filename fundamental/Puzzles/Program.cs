@@ -8,19 +8,19 @@ static string FlipCoin()
     if (rand.Next(2) == 1) return "head";
     else return "tail";
 }
-Console.WriteLine("Loading Coin Flip...");
-Console.WriteLine(FlipCoin());
-Console.WriteLine("--------------------");
+// Console.WriteLine("Loading Coin Flip...");
+// Console.WriteLine(FlipCoin());
+// Console.WriteLine("--------------------");
 
 static int RollDice(int sides = 6)
 {
     Random rand = new Random();
     return rand.Next(1, sides + 1);
 }
-Console.WriteLine("Loading Dice Roll...");
-Console.WriteLine(RollDice());
-Console.WriteLine(RollDice(20));
-Console.WriteLine("--------------------");
+// Console.WriteLine("Loading Dice Roll...");
+// Console.WriteLine(RollDice());
+// Console.WriteLine(RollDice(20));
+// Console.WriteLine("--------------------");
 
 // Roll the dice 4 times and return a list of those 4 results
 // Bonus: Write your function to roll any number of times you would like.
@@ -38,10 +38,10 @@ static List<int> StatRoll(int times = 4)
     Console.WriteLine("The largest value is " + max);
     return diceList;
 }
-Console.WriteLine("Loading Stat Roll...");
-StatRoll().ForEach(item => Console.WriteLine(item));
-// StatRoll(10).ForEach(item => Console.WriteLine(item));
-Console.WriteLine("--------------------");
+// Console.WriteLine("Loading Stat Roll...");
+// StatRoll().ForEach(item => Console.WriteLine(item));
+// // StatRoll(10).ForEach(item => Console.WriteLine(item));
+// Console.WriteLine("--------------------");
 
 
 // Roll until it lands on a certain result and tracks how many rolls occurred
