@@ -1,0 +1,15 @@
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\fundamentals-II\bin\Debug\net6.0\fundamentals-II.exe
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\fundamentals-II\bin\Debug\net6.0\fundamentals-II.deps.json
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\fundamentals-II\bin\Debug\net6.0\fundamentals-II.runtimeconfig.json
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\fundamentals-II\bin\Debug\net6.0\fundamentals-II.dll
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\fundamentals-II\bin\Debug\net6.0\fundamentals-II.pdb
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\fundamentals-II\obj\Debug\net6.0\fundamentals-II.csproj.AssemblyReference.cache
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\fundamentals-II\obj\Debug\net6.0\fundamentals-II.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\fundamentals-II\obj\Debug\net6.0\fundamentals-II.AssemblyInfoInputs.cache
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\fundamentals-II\obj\Debug\net6.0\fundamentals-II.AssemblyInfo.cs
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\fundamentals-II\obj\Debug\net6.0\fundamentals-II.csproj.CoreCompileInputs.cache
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\fundamentals-II\obj\Debug\net6.0\fundamentals-II.dll
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\fundamentals-II\obj\Debug\net6.0\refint\fundamentals-II.dll
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\fundamentals-II\obj\Debug\net6.0\fundamentals-II.pdb
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\fundamentals-II\obj\Debug\net6.0\fundamentals-II.genruntimeconfig.cache
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\fundamental\fundamentals-II\obj\Debug\net6.0\ref\fundamentals-II.dll
