@@ -1,4 +1,4 @@
-class Vehicle
+public abstract class Vehicle
 {
     public string Name;
     public string color;
@@ -9,6 +9,7 @@ class Vehicle
     public double _distanceTraveled
     {
         get { return distanceTraveled; }
+        set { distanceTraveled = value; }
     }
 
     public Vehicle(string n, int num, string col, bool e)
