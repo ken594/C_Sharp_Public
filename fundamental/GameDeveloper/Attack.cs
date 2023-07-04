@@ -1,8 +1,8 @@
-class Attack
+public class Attack
 {
     // fields
     string Name;
-    int DamageAmout;
+    public int DamageAmount;
     public string _Name
     {
         get { return Name; }
@@ -12,7 +12,7 @@ class Attack
     public Attack(string n, int dmg)
     {
         Name = n;
-        DamageAmout = dmg;
+        DamageAmount = dmg;
     }
 
 }
