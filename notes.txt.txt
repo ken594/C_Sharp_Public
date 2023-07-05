@@ -11,3 +11,11 @@
 -- To run the application
 
 	dotnet run
+
+-- To setup a web application with the ASP.NET Core framework
+
+	dotnet new web --no-https -o ProjectName
+
+-- To run the web application
+
+	dotnet run OR dotnet watch run
