@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.gap1r {
+    gap: 1rem;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+h1 {
+    align-items: center;
+    margin: 1rem auto;
+}
+
+nav ul {
+    list-style: none;
+    /* padding-top: 2rem; */
+}
+
+nav ul li, span{
+    text-align: center;
+    padding: 14px 16px;
+}
+
+#container {
+    padding: 1rem 20%;
+}
+
+.box {
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+}
+
+#container div p {
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+.text {
+    width: 400px;
+}
+
+.form-input {
+    display: table;
+}
+
+label,
+input {
+    margin-bottom: 10px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+#aform {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+button {
+    /* from the assignment solution */
+    padding: 5px;
+    margin-left: 80%;
+    background-color: aquamarine;
+    border: 2px solid rgb(90, 221, 158);
+    border-radius: 5px;
+    color: rgb(127, 127, 127);
+}

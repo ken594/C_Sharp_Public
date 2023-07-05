@@ -19,3 +19,6 @@ C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\ASP-MVC\Portfolio\obj\Debug\net
 C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\ASP-MVC\Portfolio\obj\Debug\net6.0\Portfolio.pdb
 C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\ASP-MVC\Portfolio\obj\Debug\net6.0\Portfolio.genruntimeconfig.cache
 C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\ASP-MVC\Portfolio\obj\Debug\net6.0\ref\Portfolio.dll
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\ASP-MVC\Portfolio\obj\Debug\net6.0\Portfolio.RazorAssemblyInfo.cache
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\ASP-MVC\Portfolio\obj\Debug\net6.0\Portfolio.RazorAssemblyInfo.cs
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\ASP-MVC\Portfolio\bin\Debug\net6.0\Portfolio.staticwebassets.runtime.json

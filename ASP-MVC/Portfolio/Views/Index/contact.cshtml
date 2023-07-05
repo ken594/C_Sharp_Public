@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Web Page</title>
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<body>
+    <nav>
+        <ul class="flex justify-center">
+            <li><a href="/">Home</a></li> <span>|</span>
+            <li><a href="/projects">Projects</a></li> <span>|</span>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <h1 class="flex justify-center">Contact Me!</h1>
+    <form id="aform">
+        <div class="flex justify-between">
+            <label for="name">Name: </label>
+            <input type="text" name="name" required>
+        </div>
+        <div class="flex justify-between">
+            <label for="email">Email: </label>
+            <input type="text" name="email" required>
+        </div>
+        <div class="flex justify-between">
+            <label for="message">Message: </label>
+            <textarea name="message" cols="25" rows="4" placeholder="Enter your message here"></textarea>
+        </div>
+        <div class="flex justify-end">
+            <button >Submit</button>
+        </div>
+    </form>
+</body>
+</html>

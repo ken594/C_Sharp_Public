@@ -14,3 +14,15 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\ASP-MVC\Portfolio
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/weihu/Desktop/CodingDojo/C_Sharp_Public/ASP-MVC/Portfolio/Views/Index/contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5kZXhcY29udGFjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/weihu/Desktop/CodingDojo/C_Sharp_Public/ASP-MVC/Portfolio/Views/Index/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5kZXhcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/weihu/Desktop/CodingDojo/C_Sharp_Public/ASP-MVC/Portfolio/Views/Index/projects.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5kZXhccHJvamVjdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
