@@ -1,0 +1,24 @@
+@model Survey
+@{
+    Console.WriteLine(Model.Comment);
+    if (Model.Comment == null) Model.Comment = "No comments";
+}
+<div>
+    <h1>Submitted Info</h1>
+    <div class="d-flex">
+        <ul class="list-group">
+            <li class="list-group-item">Name: </li>
+            <li class="list-group-item">Dojo Location: </li>
+            <li class="list-group-item">Favorite Language: </li>
+            <li class="list-group-item">Comment (optional): </li>
+        </ul>
+        <ul class="list-group">
+            <li class="list-group-item">@Model.Name</li>
+            <li class="list-group-item">@Model.Location</li>
+            <li class="list-group-item">@Model.Language</li>
+            <li class="list-group-item">@Model.Comment</li>
+        </ul>
+    </div>
+    @* Any other ways to do so? *@
+    <button class="btn btn-primary"><a href="/" class="link-underline-primary text-light">Go Back</a></button>
+</div>

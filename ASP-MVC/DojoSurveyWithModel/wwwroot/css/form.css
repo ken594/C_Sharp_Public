@@ -1,0 +1,19 @@
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div{
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+form {
+    width: 400px;
+    margin: 1rem auto;
+}
+form input {
+    display: flex;
+    justify-content: end;
+}

@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1>Dojo Survey</h1>
+    <form action="process" method='post'>
+        <div>
+            <label for="Name" >Your Name:</label>
+            <input type="text" name="Name">
+        </div>
+        <div>
+            <label for="Location">Dojo Location:</label>
+            <select name="Location">
+                <option value="San Jose">San Jose</option>
+                <option value="San Francisco">San Francisco</option>
+            </select>
+        </div>
+        <div>
+            <label for="Language">Favorite Language: </label>
+            <select name="Language">
+                <option value="C#">C#</option>
+                <option value="Java">Java</option>
+            </select>
+        </div>
+        <div>
+            <label for="Comment">Comment (optional):</label>
+            <textarea name="Comment" cols="25" rows="8"></textarea>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</div>
