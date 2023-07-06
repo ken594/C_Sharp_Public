@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey</title>
+    <style>
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        a {
+            text-decoration: none;
+        }
+        #list {
+            display: flex;
+        }
+        ul {
+            list-style: none;
+        }
+        li {
+            margin-bottom: 10px;
+            width: 200px;
+        }
+        button {
+            float: right;
+        }
+        .container {
+            width: 400px;
+            margin: 0 auto;
+        }
+        #comment {
+            height: 100px;
+            word-wrap: break-word;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Submitted Info</h1>
+        <div id="list">
+            <ul>
+                <li>Name: </li>
+                <li>Dojo Location: </li>
+                <li>Favorite Language: </li>
+                <li>Comment (optional): </li>
+            </ul>
+            <ul>
+                <li>@ViewBag.Name</li>
+                <li>@ViewBag.Location</li>
+                <li>@ViewBag.Language</li>
+                <li id="comment">@ViewBag.Comment</li>
+            </ul>
+        </div>
+        @* Any other ways to do so? *@
+        <button><a href="/">Go Back</a></button>
+    </div>
+</body>
+</html>
