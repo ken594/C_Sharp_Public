@@ -1,6 +1,6 @@
 {
-  "SerializedFilePath": "c:\\Users\\weihu\\Desktop\\CodingDojo\\C_Sharp_Public\\ASP-MVC\\RazorFun\\obj\\Debug\\net6.0\\project.razor.json",
-  "FilePath": "c:\\Users\\weihu\\Desktop\\CodingDojo\\C_Sharp_Public\\ASP-MVC\\RazorFun\\RazorFun.csproj",
+  "SerializedFilePath": "c:\\Users\\weihu\\Desktop\\CodingDojo\\C_Sharp_Public\\ASP-MVC\\CountDown\\obj\\Debug\\net6.0\\project.razor.json",
+  "FilePath": "c:\\Users\\weihu\\Desktop\\CodingDojo\\C_Sharp_Public\\ASP-MVC\\CountDown\\CountDown.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "6.0",
@@ -18371,10 +18371,10 @@
     ],
     "CSharpLanguageVersion": 1000
   },
-  "RootNamespace": "RazorFun",
+  "RootNamespace": "CountDown",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\weihu\\Desktop\\CodingDojo\\C_Sharp_Public\\ASP-MVC\\RazorFun\\Views\\Index\\Index.cshtml",
+      "FilePath": "c:\\Users\\weihu\\Desktop\\CodingDojo\\C_Sharp_Public\\ASP-MVC\\CountDown\\Views\\Index\\Index.cshtml",
       "TargetPath": "Views\\Index\\Index.cshtml",
       "FileKind": "mvc"
     }

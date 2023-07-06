@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Web Page</title>
+</head>
+<body>
+    <div>
+        <h2>Current Time</h2>
+        <p>@ViewBag.CurrentTime</p>
+    </div>
+    <div>
+        <h2>End Time</h2>
+        <p>@ViewBag.EndTime</p>
+    </div>
+    <div>
+        <h2>Time Remaining:</h2>
+        @{
+            var remainingTime = ViewBag.RemainingTime;
+            if (remainingTime.TotalMilliseconds > 0)
+            {
+                @* <p>@remainingTime.ToString(@"dd\:hh\:mm")</p> *@
+                <p>@remainingTime.Days day(s), @remainingTime.Hours hour(s), @remainingTime.Minutes mintue(s) remaining</p>
+            }
+        }
+        @* <p>@(ViewBag.RemainingTime)</p> *@
+    </div>
+</body>
+</html>

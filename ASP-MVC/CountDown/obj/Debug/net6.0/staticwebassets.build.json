@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "K+dOeEZMuQ9JOU7/hVI2mBbAo3KHsoRqpXTcj+SRPOU=",
+  "Source": "CountDown",
+  "BasePath": "_content/CountDown",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "CountDown\\wwwroot",
+      "Source": "CountDown",
+      "ContentRoot": "C:\\Users\\weihu\\Desktop\\CodingDojo\\C_Sharp_Public\\ASP-MVC\\CountDown\\wwwroot\\",
+      "BasePath": "_content/CountDown",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}
