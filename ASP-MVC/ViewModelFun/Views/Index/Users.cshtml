@@ -1,0 +1,22 @@
+@{
+    Layout = "_Index";
+}
+
+@model List<string>
+
+<div class="text-center">
+    <div class="d-flex justify-content-center">
+        <a href="/">Message</a>
+        <span> | </span>
+        <a href="/numbers">Numbers</a>
+        <span> | </span>
+        <a href="/user">User</a>
+        <span> | </span>
+        <a href="/users">Users</a>
+    </div>
+    <h1>Here is a list of User</h1>
+    @foreach(string str in @Model)
+    {
+        <p>@str</p>
+    }
+</div>
