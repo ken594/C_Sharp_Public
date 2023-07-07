@@ -189,8 +189,14 @@ class SLNode {
      * @returns {boolean}
      */
     contains(val) {
-      //Code goes here
-    }
+      if (this.isEmpty()) return false;
+      let runner = this.head;
+      while (runner.next) {
+          if (runner.value == val) return true;
+          runner = runner.next;
+      }
+      return false;
+  }
   
     /**
      * Determines whether or not the given search value exists in this list.
@@ -311,7 +317,18 @@ class SLNode {
      * @returns {SinglyLinkedList} This list with the added nodes.
      */
     concat(addList) {
-        
+        if (this.isEmpty()) 
+        {
+          this.head = addList.head;
+          return this;
+        }
+        if (addList.isEmpty()) return this;
+        let curr = this.head;
+        while (curr.next) {
+          curr = curr.next;
+        }
+        curr.next = addList.head;
+        return this;
     }
   
     /**
@@ -321,7 +338,21 @@ class SLNode {
      * - Space: O(?).
      * @returns {SinglyLinkedList} This list.
      */
-    moveMinToFront() { }
+    moveMinToFront() {
+      if (this.isEmpty()) return this;
+      let min = this.head.value;
+      let curr = this.head;
+
+      while (curr.next)
+      {
+        if (curr.value < min) min = curr.value;
+        curr = curr.next;
+      }
+
+      if (min == this.head.value) return this;
+      this.removeVal(min);
+      return this.addToFront(min);
+    }
   
     // EXTRA
     /**
@@ -335,7 +366,24 @@ class SLNode {
      * @returns {SinglyLinkedList} The split list containing the nodes that are
      *    no longer in this list.
      */
-    splitOnVal(val) { }
+    splitOnVal(val) {
+      let newList = new SLList();
+      if (this.isEmpty() || !this.contains(val)) return newList;
+      let curr = this.head;
+      if (curr.value == val)
+      {
+        newList.head = this.head;
+        this.head = null;
+        return newList;
+      }
+      while (curr.next && curr.next.value != val)
+      {
+        curr = curr.next;
+      }
+      newList.head = curr.next;
+      curr.next = null;
+      return newList;
+    }
   
     //Here's a gimme: This will print the contents of a singly linked list.
     printList() {
@@ -361,13 +409,19 @@ class SLNode {
   after completing it, uncomment the code.
   */
   let myList = new SLList();
+  let list2 = new SLList();
   
   myList.addToBack(1).addToBack(2).addToBack(3).addToBack(4).addToBack(5).addToBack(-8).addToBack(-6);
+  // let newList = myList.splitOnVal(1);
+  // newList.printList();
+  // myList.moveMinToFront();
+  // list2.addToBack(10).addToBack(11);
 //   myList.prepend(10, -6);
 //   console.log(myList.recursiveMax());
 //   console.log(myList.secondToLast());
 //   console.log(myList.removeVal(1));
-  myList.printList()
+  // myList.concat(list2);
+  myList.printList();
   
 //   myList.addToFront(60).addToFront(75).addToFront(23).addToFront(11).addToFront(88).addToFront(55).addToFront(45).addToFront(25)
 //   myList.printList()
