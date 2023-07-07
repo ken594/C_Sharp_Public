@@ -22,16 +22,20 @@ public class HomeController : Controller
     [HttpPost("process")]
     public IActionResult Process(Survey mySurvey)
     {
-        // Console.WriteLine(mySurvey.Name);
-        // Console.WriteLine(mySurvey.Location);
-        return RedirectToAction("Result", mySurvey);
+        if (ModelState.IsValid)
+        {
+            return RedirectToAction("Result", mySurvey);
+        }
+        else
+        {
+            // back to the form if error
+            return View("Index");
+        }
     }
 
     [HttpGet("/results")]
     public ViewResult Result(Survey survey)
     {
-        // Console.WriteLine(survey.Language);
-        // Console.WriteLine(survey.Comment);
         return View("Result", survey);
     }
 

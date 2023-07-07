@@ -1,31 +1,33 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model Survey
 
 <div class="text-center">
     <h1>Dojo Survey</h1>
     <form action="process" method='post'>
         <div>
-            <label for="Name" >Your Name:</label>
-            <input type="text" name="Name">
+            <label asp-for="Name" >Your Name:</label>
+            <input asp-for="Name">
+            <span asp-validation-for="Name"></span>
         </div>
         <div>
-            <label for="Location">Dojo Location:</label>
-            <select name="Location">
+            <label asp-for="Location">Dojo Location:</label>
+            <select asp-for="Location">
                 <option value="San Jose">San Jose</option>
                 <option value="San Francisco">San Francisco</option>
             </select>
+            <span asp-validation-for="Location"></span>
         </div>
         <div>
-            <label for="Language">Favorite Language: </label>
-            <select name="Language">
+            <label asp-for="Language">Favorite Language: </label>
+            <select asp-for="Language">
                 <option value="C#">C#</option>
                 <option value="Java">Java</option>
             </select>
+            <span asp-validation-for="Language"></span>
         </div>
-        <div>
-            <label for="Comment">Comment (optional):</label>
-            <textarea name="Comment" cols="25" rows="8"></textarea>
+        <div class="d-flex justify-content-center">
+            <label asp-for="Comment">Comment (optional):</label>
+            <textarea asp-for="Comment" cols="25" rows="8"></textarea>
+            <span asp-validation-for="Comment"></span>
         </div>
         <input type="submit" value="Submit">
     </form>
