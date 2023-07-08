@@ -1,0 +1,32 @@
+﻿@model User
+
+<h1>Enter your information</h1>
+<form action="register" method="post">
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label">Name: </label>
+        <input asp-for="Name" class="form-control">
+        <span asp-validation-for="Name"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Email" class="form-label">Email Address: </label>
+        <input asp-for="Email" class="form-control">
+        <span asp-validation-for="Email"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="DateOfBirth" class="form-label">Date of Birth: </label>
+        <input asp-for="DateOfBirth" class="form-control">
+        <span asp-validation-for="DateOfBirth"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Password" class="form-label">Password: </label>
+        <input asp-for="Password" class="form-control">
+        <span asp-validation-for="Password"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="OddNumber" class="form-label">Favorite Prime Number: </label>
+        <input asp-for="OddNumber" class="form-control">
+        <span asp-validation-for="OddNumber"></span>
+    </div>
+    <input type="submit" value="Submit" class="btn btn-primary float-end">
+    @* <button type="submit" class="btn btn-primary float-end">Submit</button> *@
+</form>
