@@ -1,0 +1,9 @@
+﻿@model Form
+
+<h1>DateValidator</h1>
+<form action="process" method="post">
+    <label asp-for="Date">Pick a date</label>
+    <input asp-for="Date">
+    <input type="submit" value="Submit">
+    <span asp-validation-for="Date"></span>
+</form>
