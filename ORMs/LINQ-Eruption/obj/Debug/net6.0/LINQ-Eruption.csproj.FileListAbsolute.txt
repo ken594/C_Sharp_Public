@@ -1,0 +1,15 @@
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\ORMs\LINQ-Eruption\bin\Debug\net6.0\LINQ-Eruption.exe
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\ORMs\LINQ-Eruption\bin\Debug\net6.0\LINQ-Eruption.deps.json
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\ORMs\LINQ-Eruption\bin\Debug\net6.0\LINQ-Eruption.runtimeconfig.json
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\ORMs\LINQ-Eruption\bin\Debug\net6.0\LINQ-Eruption.dll
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\ORMs\LINQ-Eruption\bin\Debug\net6.0\LINQ-Eruption.pdb
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\ORMs\LINQ-Eruption\obj\Debug\net6.0\LINQ-Eruption.csproj.AssemblyReference.cache
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\ORMs\LINQ-Eruption\obj\Debug\net6.0\LINQ-Eruption.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\ORMs\LINQ-Eruption\obj\Debug\net6.0\LINQ-Eruption.AssemblyInfoInputs.cache
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\ORMs\LINQ-Eruption\obj\Debug\net6.0\LINQ-Eruption.AssemblyInfo.cs
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\ORMs\LINQ-Eruption\obj\Debug\net6.0\LINQ-Eruption.csproj.CoreCompileInputs.cache
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\ORMs\LINQ-Eruption\obj\Debug\net6.0\LINQ-Eruption.dll
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\ORMs\LINQ-Eruption\obj\Debug\net6.0\refint\LINQ-Eruption.dll
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\ORMs\LINQ-Eruption\obj\Debug\net6.0\LINQ-Eruption.pdb
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\ORMs\LINQ-Eruption\obj\Debug\net6.0\LINQ-Eruption.genruntimeconfig.cache
+C:\Users\weihu\Desktop\CodingDojo\C_Sharp_Public\ORMs\LINQ-Eruption\obj\Debug\net6.0\ref\LINQ-Eruption.dll
