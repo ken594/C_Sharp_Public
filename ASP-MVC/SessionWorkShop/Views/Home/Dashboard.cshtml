@@ -1,0 +1,25 @@
+@{
+    int? number = Context.Session.GetInt32("Num");
+}
+
+<div>
+    <div class="pt-3 d-flex justify-content-between align-items-center">
+        <h1>Welcome @ViewBag.Name</h1>
+        @*  Is there a easier way to perform the post request without a form? *@
+        <form action="logout" method="post">
+            <button type="submit" class="btn btn-primary" >Log out</button>
+        </form>
+    </div>
+    <hr>
+    <h1 class="text-center">@number</h1>
+    <form action="calculation" method="post">
+        <div class="d-flex justify-content-between w-25 mx-auto mb-3 gap-2">
+            <button class="btn btn-success w-100" name="action" value="1">+1</button>
+            <button class="btn btn-danger w-100" name="action" value="2">-1</button>
+        </div>
+        <div class="text-center d-flex justify-content-between w-25 mx-auto gap-2 align-items-center">
+            <button class="btn btn-info w-100" name="action" value="3">x2</button>
+            <button class="btn btn-warning w-100" name="action" value="4">+ Random</button>
+        </div>
+    </form>
+</div>
