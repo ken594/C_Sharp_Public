@@ -19,3 +19,7 @@
 -- To run the web application
 
 	dotnet run OR dotnet watch run
+
+-- To create a MVC project
+
+	dotnet new mvc --no-https -o ProjectName
