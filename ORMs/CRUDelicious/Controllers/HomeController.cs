@@ -20,7 +20,7 @@ public class HomeController : Controller
     {
         // Get all dishes
         // List<Dish> AllDishes = _context.Dishes.ToList();
-        ViewBag.AllDishes = _context.Dishes.ToList();
+        ViewBag.AllDishes = _context.Dishes.OrderByDescending(i => i.CreatedAt).ToList();
 
         // Hard code to insert some initial data
         // Dish newDish = new Dish();
@@ -47,8 +47,8 @@ public class HomeController : Controller
             return RedirectToAction("Index");
         }
 
-        ViewBag.OneDish = OneDish;
-        return View();
+        // ViewBag.OneDish = OneDish;
+        return View("Show", OneDish);
     }
 
     [HttpGet("dishes/new")]

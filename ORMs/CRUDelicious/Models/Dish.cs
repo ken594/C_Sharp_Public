@@ -13,6 +13,7 @@ public class Dish
     public string Chef { get; set; }
 
     [Required]
+    // [Range(1, 5)]
     [BetweenOneAndFive]
     public int Tastiness { get; set; }
 

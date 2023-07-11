@@ -1,28 +1,26 @@
-@{
-    Dish OneDish = ViewBag.OneDish;
-}
+@model Dish
 
 <div class="text-center my-3">
-    <h1 class="display-4">@OneDish.Name</h1>
+    <h1 class="display-4">@Model.Name</h1>
     <div>
         <a href="/">Home</a>
         |
         <a href="/dishes/new">Add a Dish</a>
     </div>
 </div>
-<p>@OneDish.Name by @OneDish.Chef</p>
+<p>@Model.Name by @Model.Chef</p>
 <hr class="col-4">
-<p>@OneDish.Description</p>
-<p>Calories: @OneDish.Calories</p>
-<p>Tastiness: @OneDish.Tastiness</p>
+<p>@Model.Description</p>
+<p>Calories: @Model.Calories</p>
+<p>Tastiness: @Model.Tastiness</p>
 <div class="d-flex justify-content-around">
-    <form asp-action="Destroy" asp-controller="Home" asp-route-DishId=@OneDish.DishID method="post">
+    <form asp-action="Destroy" asp-controller="Home" asp-route-DishId=@Model.DishID method="post">
         <input type="submit" value="Delete" class="btn btn-danger">
     </form>
     @*  Use the a tag insteand, otherwise there will be a question mark
         at the end of the url. Why it happens?
     *@
-    <a href="/dishes/@OneDish.DishID/edit" class="btn btn-primary">Edit</a>
+    <a href="/dishes/@Model.DishID/edit" class="btn btn-primary">Edit</a>
     @* <form action="/dishes/@OneDish.DishID/edit" class="w-100">
         <input type="submit" value="Edit" class="btn btn-primary">
     </form> *@
