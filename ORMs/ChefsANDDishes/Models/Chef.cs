@@ -16,6 +16,7 @@ public class Chef
     [Required]
     [DataType(DataType.Date)]
     [FutureDate]
+    [AtLeastEighteen]
     public DateTime DateOfBirth { get; set; }
 
     public DateTime CreatedAt { get; set; } = DateTime.Now;
@@ -39,5 +40,22 @@ public class FutureDateAttribute : ValidationAttribute
         {
             return ValidationResult.Success;
         }
+    }
+}
+
+public class AtLeastEighteenAttribute : ValidationAttribute
+{
+    protected override ValidationResult? IsValid(object? value, ValidationContext validationContext)
+    {
+        // return base.IsValid(value, validationContext);
+        DateTime newDate = (DateTime)value;
+        DateTime NowDate = DateTime.Today.AddYears(-18);
+        // Console.WriteLine(NowDate);
+        // Console.WriteLine(newDate);
+        if (newDate > NowDate)
+        {
+            return new ValidationResult("Chef must be at least 18 years old to be added");
+        }
+        return ValidationResult.Success;
     }
 }
