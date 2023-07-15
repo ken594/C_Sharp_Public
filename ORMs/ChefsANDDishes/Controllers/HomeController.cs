@@ -19,7 +19,7 @@ public class HomeController : Controller
     [HttpGet("")]
     public IActionResult Index()
     {
-        // List<Chef> AllChefs = db.Chefs.ToList();
+        // Include AllDishes
         ViewBag.AllChefs = db.Chefs.Include(c => c.AllDishes).ToList();
         return View();
     }
