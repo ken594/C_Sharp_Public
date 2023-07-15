@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    @await Html.PartialAsync("_Navbar")
+    <h1>Check out our roster of Chefs!</h1>
+    <hr>
+</div>
+<div class="w-75 mx-auto">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th># of Dishes</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Chef c in ViewBag.AllChefs)
+            {
+                <tr>
+                    <th>@c.FirstName @c.LastName</th>
+                    <th>@(DateTime.Now.Year - c.DateOfBirth.Year)</th>
+                    <th>@c.AllDishes.Count</th>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

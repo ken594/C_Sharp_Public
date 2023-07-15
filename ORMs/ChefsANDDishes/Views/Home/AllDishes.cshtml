@@ -1,0 +1,28 @@
+<div class="text-center">
+    @await Html.PartialAsync("_Navbar")
+    <h1>Yum! Check out our tasty dishes!</h1>
+    <hr>
+</div>
+<div class="w-75 mx-auto">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Chef</th>
+                <th>Tastiness</th>
+                <th>Calories</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Dish d in ViewBag.AllDishes)
+            {
+                <tr>
+                    <th>@d.Name</th>
+                    <th>@d.Creator.FirstName @d.Creator.LastName</th>
+                    <th>@d.Tastiness</th>
+                    <th>@d.Calories</th>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
