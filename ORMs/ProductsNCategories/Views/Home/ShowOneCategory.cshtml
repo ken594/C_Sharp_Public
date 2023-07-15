@@ -1,0 +1,40 @@
+@model Association
+<div class="text-center">
+    @await Html.PartialAsync("_Navbar")
+    <h1>@ViewBag.OneCategory.CategoryName</h1>
+</div>
+<div class="d-flex justify-content-around">
+    <div>
+        <h1 class="text-center">Products</h1>
+        <ul class="list-group">
+            @foreach (Association a in ViewBag.CategoriesWithProducts.Products)
+            {
+                <li class="list-group-item">@a.Product.ProductName</li>
+            }
+        </ul>
+    </div>
+    <div>
+        <h1 class="text-center">Add Products</h1>
+        <form action="/associations/create/category" method="post">
+            <select asp-for="ProductId" class="form-select">
+                @foreach (Product p in ViewBag.AllProducts)
+                {
+                    bool flag = true;
+                    @foreach (Association a in ViewBag.CategoriesWithProducts.Products)
+                    {
+                        if (a.Product.ProductName == p.ProductName)
+                        {
+                            flag = false;
+                            break;
+                        }
+                    }
+                    if (flag) {
+                        <option value="@p.ProductId">@p.ProductName</option>
+                    }
+                }
+            </select>
+            <input asp-for="CategoryId" value="@ViewBag.CategoryId" class="visually-hidden">
+            <input type="submit" value="Add" class="btn btn-primary mt-3 float-end">
+        </form>
+    </div>
+</div>
