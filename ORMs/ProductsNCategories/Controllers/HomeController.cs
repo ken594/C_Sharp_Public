@@ -108,6 +108,21 @@ public class HomeController : Controller
         return Redirect("/categories/" + newAssociation.CategoryId);
     }
 
+    [HttpPost("/associations/destroy")]
+    public IActionResult DeleteAssociation(Association oldAssociation)
+    {
+        // Console.WriteLine("*********************");
+        // Console.WriteLine(oldAssociation.CategoryId);
+        Association? AssToDelete = db.Associations
+                                    .SingleOrDefault(i => i.CategoryId == oldAssociation.CategoryId && i.ProductId == oldAssociation.ProductId);
+        if (AssToDelete == null) return RedirectToAction("Index");
+
+        db.Associations.Remove(AssToDelete);
+        db.SaveChanges();
+        Console.WriteLine("**************Deleted Successfully***********");
+        return RedirectToAction("Index");
+    }
+
     public IActionResult Privacy()
     {
         return View();

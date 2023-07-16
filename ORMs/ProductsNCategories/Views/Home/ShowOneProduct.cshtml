@@ -9,7 +9,14 @@
         <ul class="list-group">
             @foreach (Association a in ViewBag.ProductWithCategories.Categories)
             {
-                <li class="list-group-item">@a.Category.CategoryName</li>
+                <li class="list-group-item d-flex justify-content-between">
+                    @a.Category.CategoryName
+                    <form action="/associations/destroy" method="post">
+                        <input asp-for="ProductId" value="@a.ProductId" class="visually-hidden">
+                        <input asp-for="CategoryId" value="@a.CategoryId" class="visually-hidden">
+                        <input type="submit" value="Delete" class="btn btn-danger">
+                    </form>
+                </li>
             }
         </ul>
     </div>
