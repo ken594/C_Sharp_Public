@@ -20,19 +20,7 @@
             <select asp-for="CategoryId" class="form-select">
                 @foreach (Category c in ViewBag.AllCategories)
                 {
-                    @* Is there a better way to do so? Nested LINQ query?*@
-                    bool flag = true;
-                    @foreach (Association a in ViewBag.ProductWithCategories.Categories)
-                    {
-                        if (a.Category.CategoryName == c.CategoryName)
-                        {
-                            flag = false;
-                            break;
-                        }
-                    }
-                    if (flag) {
-                        <option value="@c.CategoryId">@c.CategoryName</option>
-                    }
+                    <option value="@c.CategoryId">@c.CategoryName</option>
                 }
             </select>
             <input asp-for="ProductId" value="@ViewBag.ProductId" class="visually-hidden">

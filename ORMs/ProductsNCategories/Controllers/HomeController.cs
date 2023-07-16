@@ -51,11 +51,19 @@ public class HomeController : Controller
         if (OneProduct == null) return RedirectToAction("Index");
         ViewBag.OneProduct = OneProduct;
         ViewBag.ProductId = id;
-        ViewBag.AllCategories = db.Categories.ToList();
+        // ViewBag.AllCategories = db.Categories.ToList();
         ViewBag.ProductWithCategories = db.Products
                                             .Include(p => p.Categories)
                                             .ThenInclude(a => a.Category)
                                             .FirstOrDefault(p => p.ProductId == id);
+
+        // To filtered the selected options in the dropdown
+        // first grab all the categories and include the Associations table
+        // then pick categories which the id does NOT match the categoryID inside of the association table
+        ViewBag.AllCategories = db.Categories
+                                        .Include(c => c.Products)
+                                        .Where(c => !c.Products.Any(a => a.ProductId == id))
+                                        .ToList();
         return View("ShowOneProduct");
     }
 

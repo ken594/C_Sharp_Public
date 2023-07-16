@@ -19,6 +19,7 @@
             <select asp-for="ProductId" class="form-select">
                 @foreach (Product p in ViewBag.AllProducts)
                 {
+                    @* Nested foreach loop to filter options *@
                     bool flag = true;
                     @foreach (Association a in ViewBag.CategoriesWithProducts.Products)
                     {
