@@ -36,3 +36,7 @@
 -- After the adding the Migrations, we need to apply it to the database
 
 	dotnet ef database update
+
+-- To use .Include(), add this package in the Controller
+
+	using Microsoft.EntityFrameworkCore
