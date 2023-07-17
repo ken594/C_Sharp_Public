@@ -1,0 +1,17 @@
+@model dynamic
+
+<div>
+    @await Html.PartialAsync("_Navbar", (string)Model.UserName)
+    <h1>@Model.Wedding.WedderOne & @Model.Wedding.WedderTwo's Wedding</h1>
+    <p>Date: @Model.Wedding.WeddingDate.ToString("MMM dd, yyyy")</p>
+    <p>Guests:</p>
+    <ul>
+        @foreach (Association a in @Model.Wedding.User)
+        {
+            if (@a.User != null)
+            {
+                <li>@a.User.FirstName @a.User.LastName</li>
+            }
+        }
+    </ul>
+</div>

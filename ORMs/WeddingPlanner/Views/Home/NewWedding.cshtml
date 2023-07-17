@@ -1,0 +1,6 @@
+@model dynamic
+
+<div>
+    @await Html.PartialAsync("_Navbar", (string)Model.UserName)
+    @await Html.PartialAsync("_WeddingForm", (Wedding)Model.Wedding)
+</div>

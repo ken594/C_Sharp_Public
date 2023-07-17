@@ -1,0 +1,69 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model dynamic
+
+<div class="text-center">
+    @await Html.PartialAsync("_Navbar", (string)Model.UserName)
+</div>
+<div class="w-75 mx-auto">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Wedding of</th>
+                <th>Date</th>
+                <th>Guest Count</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Wedding w in Model.Wedding)
+            {
+                <tr>
+                    <th><a href="/weddings/@w.WeddingId">@w.WedderOne & @w.WedderTwo</a></th>
+                    <th>
+                        @w.WeddingDate.ToString("MMM dd yyyy")
+                    </th>
+                    <th>@w.User.Count</th>
+                    <th>
+                        @{
+                            if (w.CreatorId == Model.thisUserId)
+                            {
+                                <form action="/weddings/destroy/@w.WeddingId" method="post">
+                                    <input type="submit" value="Delete" class="btn btn-danger">
+                                </form>
+                            }
+                            else {
+                                List<Association> aList = w.User.ToList();
+                                bool isAttending = false;
+                                foreach(Association a in aList)
+                                {
+                                    if (a.UserId == Model.thisUserId)
+                                    {
+                                        isAttending = true;
+                                        break;
+                                    }
+                                }
+
+                                if (isAttending)
+                                {
+                                    // Wonder if use a partial to do the form would be better or not?
+                                    <form action="/associations/destroy/@Model.thisUserId/@w.WeddingId" method="post">
+                                        <input type="submit" value="Un-RSVP" class="btn btn-warning">
+                                    </form>
+                                }
+                                else
+                                {
+                                    <form action="/associations/create/@Model.thisUserId/@w.WeddingId" method="post">
+                                        <input type="submit" value="RSVP" class="btn btn-primary">
+                                    </form>
+                                }
+                            }
+                        }
+                    </th>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

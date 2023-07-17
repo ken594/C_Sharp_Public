@@ -1,0 +1,42 @@
+Belt Prep: Wedding Planner
+URL: https://login.codingdojo.com/m/613/14009/105749
+
+** DONE ** Setup the User model for regiser and LoginUser model for login
+
+** DONE ** Model and database Connection Setup
+    - https://login.codingdojo.com/m/613/14008/104589
+
+** DONE ** Create a User Controller to handle login and register
+
+** DONE ** Session Setup
+    - https://login.codingdojo.com/m/613/14006/104568
+
+** DONE ** Write logic for register and login
+
+** DONE ** Logout button
+
+** DONE ** Confirm the register and login is working accordingly
+
+** DONE ** Create a navbar partial
+
+** DONE ** Wedding Model && Association Model
+            - Modify the User model to have a relationship with Wedding model
+
+** DONE ** Reconnect to the database and migration
+
+** DONE ** Plan a wedding page
+    - Wedding Create
+
+** DONE ** Add Validation
+
+** DONE **  Show all weddings page
+            - Table to show all
+            - Write logic for the Guest Count
+            - Write logic for three actions
+                - Delete if this is the user creator (One-to-Many)
+                - RSVP if not currently attending this wedding (Many-to-Many)
+                - Un-RSVP if currently attending this wedding (Many-to-Many)
+
+** DONE **  Show one wedding page
+            - Show the detailed of the wedding
+            - Show a list of Guest (One-to-Many)
