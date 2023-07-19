@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model MyModel
+
+<div class="text-center">
+    @await Html.PartialAsync("_Navbar", Model.UserName)
+    @await Html.PartialAsync("_PostMessage", Model.message)
+</div>
+@foreach (Message m in Model.MessageList)
+    {
+        <ul>
+            <li>
+                @m.Creator.FirstName @m.Creator.LastName.ToUpper()[0] - @m.CreatedAt.ToString("MMM dd, yyyy")
+                <ul>
+                    <li>
+                        @m.MessageText
+                        <ul>
+                            @foreach (Comment c in m.AllComments)
+                            {
+                            <li>
+                                @c.Creator.FirstName @c.Creator.LastName.ToUpper()[0] - @c.CreatedAt.ToString("MMM dd, yyyy")
+                                <ul>
+                                    <li>
+                                        @c.CommentText
+                                    </li>
+                                </ul>
+                            </li>
+                            }
+                            <li>
+                                @{
+                                    Comment newComment = new Comment();
+                                    newComment.MessageId = m.MessageId;
+                                    @await Html.PartialAsync("_PostComment", newComment)
+                                }
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            
+        </ul>
+    }

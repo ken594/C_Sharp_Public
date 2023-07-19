@@ -1,0 +1,7 @@
+@model Message
+<form action="/messages/create" method="post">
+    <label asp-for="MessageText">Post a message</label>
+    <input asp-for="MessageText">
+    <span asp-validation-for="MessageText" class="text-danger"></span>
+    <input type="submit" value="Post" class="btn btn-success">
+</form>
