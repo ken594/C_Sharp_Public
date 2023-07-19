@@ -27,6 +27,7 @@ public class UserController : Controller
         return View();
     }
 
+    // Handle Register action
     [HttpPost("/users/create")]
     public IActionResult Register(User newUser)
     {
@@ -49,6 +50,7 @@ public class UserController : Controller
         return View("Index");
     }
 
+    // Handle login action
     [HttpPost("/users/login")]
     public IActionResult Login(LoginUser userSubmission)
     {

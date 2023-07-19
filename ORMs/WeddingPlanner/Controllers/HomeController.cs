@@ -22,6 +22,7 @@ public class HomeController : Controller
         db = context;
     }
 
+    // all wedding page
     [SessionCheck]
     [HttpGet("/weddings")]
     public IActionResult Index()
@@ -37,7 +38,7 @@ public class HomeController : Controller
         return View("Index", myModel);
     }
 
-    // Logout button
+    // Handle logout action
     [SessionCheck]
     [HttpPost("logout")]
     public IActionResult Logout()
@@ -46,6 +47,7 @@ public class HomeController : Controller
         return Redirect("/");
     }
 
+    // New Wedding page
     [SessionCheck]
     [HttpGet("/weddings/new")]
     public IActionResult NewWedding()
@@ -54,6 +56,7 @@ public class HomeController : Controller
         return View(myModel);
     }
 
+    // Handle create a new wedding
     [SessionCheck]
     [HttpPost("/weddings/create")]
     public IActionResult CreateWedding(Wedding NewWedding)
@@ -70,6 +73,7 @@ public class HomeController : Controller
         return View("NewWedding", myModel);
     }
 
+    // Show one wedding page
     [SessionCheck]
     [HttpGet("/weddings/{id}")]
     public IActionResult ShowWedding(int id)
@@ -83,6 +87,7 @@ public class HomeController : Controller
         return View(myModel);
     }
 
+    // Handle delete a wedding
     [SessionCheck]
     [HttpPost("/weddings/destroy/{weddingId}")]
     public IActionResult DeleteWedding(int weddingId)
@@ -92,17 +97,19 @@ public class HomeController : Controller
 
         db.Weddings.Remove(WeddingToDelete);
 
-        List<Association> AList = db.Associations.Where(a => a.WeddingId == weddingId).ToList();
-        // Not sure if we could just remove a list
-        // So we use a foreach loop to remove each
-        foreach (Association a in AList)
-        {
-            db.Associations.Remove(a);
-        }
+        // When delete a wedding, also clear out the associations of this wedding
+        // List<Association> AList = db.Associations.Where(a => a.WeddingId == weddingId).ToList();
+        // // Not sure if we could just remove a list
+        // // So we use a foreach loop to remove each
+        // foreach (Association a in AList)
+        // {
+        //     db.Associations.Remove(a);
+        // }
         db.SaveChanges();
         return RedirectToAction("Index");
     }
 
+    // Handle create an assocaition
     [SessionCheck]
     [HttpPost("/associations/create/{userId}/{weddingId}")]
     public IActionResult CreateAssociation(int userId, int weddingId)
@@ -120,6 +127,7 @@ public class HomeController : Controller
         return RedirectToAction("Index");
     }
 
+    // Handle delete an association
     [SessionCheck]
     [HttpPost("/associations/destroy/{userId}/{weddingId}")]
     public IActionResult DeleteAssociation(int userId, int weddingId)
@@ -145,6 +153,7 @@ public class HomeController : Controller
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
 
+    // helper function to create a dynamic
     public dynamic getMyModel()
     {
         dynamic myModel = new ExpandoObject();

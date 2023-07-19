@@ -24,6 +24,7 @@ public class Wedding
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
 
     // This is the ID we will use to know which User made the wedding
+    // Should we just make a connection to the user table instead of the ID?
     public int? CreatorId { get; set; }
 
     public List<Association> User { get; set; } = new List<Association>();

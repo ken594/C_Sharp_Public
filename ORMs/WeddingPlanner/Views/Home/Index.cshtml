@@ -28,6 +28,7 @@
                     <th>@w.User.Count</th>
                     <th>
                         @{
+                            @* Delete button *@
                             if (w.CreatorId == Model.thisUserId)
                             {
                                 <form action="/weddings/destroy/@w.WeddingId" method="post">
@@ -35,6 +36,10 @@
                                 </form>
                             }
                             else {
+                                @*  It might be better to use LINQ query to do so
+                                    Ex. If (w.User.Any(a => a.UserId == Model.thisUserId)) then Un-RSVP
+                                        else RSVP
+                                *@
                                 List<Association> aList = w.User.ToList();
                                 bool isAttending = false;
                                 foreach(Association a in aList)
@@ -46,6 +51,7 @@
                                     }
                                 }
 
+                                @* Un-RSVP button *@
                                 if (isAttending)
                                 {
                                     // Wonder if use a partial to do the form would be better or not?
@@ -53,6 +59,7 @@
                                         <input type="submit" value="Un-RSVP" class="btn btn-warning">
                                     </form>
                                 }
+                                @* RSVP button *@
                                 else
                                 {
                                     <form action="/associations/create/@Model.thisUserId/@w.WeddingId" method="post">
