@@ -155,18 +155,18 @@ class Queue {
     }
 }
 
-let test1 = new Queue();
-let test2 = new Queue();
-console.log(test1.enqueue(1));
-console.log(test1.enqueue(2));
-console.log(test1.enqueue(3));
+// let test1 = new Queue();
+// let test2 = new Queue();
+// console.log(test1.enqueue(1));
+// console.log(test1.enqueue(2));
+// console.log(test1.enqueue(3));
 
-console.log(test2.enqueue(1));
-console.log(test2.enqueue(5));
-console.log(test2.enqueue(3));
+// console.log(test2.enqueue(1));
+// console.log(test2.enqueue(5));
+// console.log(test2.enqueue(3));
 // console.log(test1.dequeue());
-console.log(test1);
-console.log(test1.compareQueues(test2));
+// console.log(test1);
+// console.log(test1.compareQueues(test2));
 
 /* EXTRA: Rebuild the above class using a linked list instead of an array. */
 
@@ -180,7 +180,7 @@ class QueueNode {
         this.data = data;
         this.next = null;
     }
-    }
+}
 
     class LinkedListQueue {
     constructor() {
@@ -194,7 +194,9 @@ class QueueNode {
      * - Space: O(1) constant.
      * @returns {boolean} Indicates if the list is empty.
      */
-    isEmpty() {}
+    isEmpty() {
+        return this.size == 0;
+    }
 
     /**
      * Adds a given val to the back of the queue.
@@ -203,14 +205,34 @@ class QueueNode {
      * @param {any} val
      * @returns {number} The new size of the queue.
      */
-    enqueue(val) {}
+    enqueue(val) {
+        const node = new QueueNode(val);
+        if (this.isEmpty()) {
+            this.top = node;
+            this.tail = node;
+            this.size++;
+            return this.size;
+        }
+
+        this.tail.next = node;
+        this.tail = node;
+        this.size++;
+        return this.size;
+    }
 
     /**
      * - Time: O(1) constant.
      * - Space: O(1) constant.
      * @returns {any} The removed item.
      */
-    dequeue() {}
+    dequeue() {
+        if (this.isEmpty()) return null;
+
+        let dequeueNode = this.top;
+        this.top = this.top.next;
+        this.size--;
+        return dequeueNode;
+    }
 
     /**
      * Retrieves the first item without removing it.
@@ -218,7 +240,9 @@ class QueueNode {
      * - Space: O(1) constant.
      * @returns {any} The first item.
      */
-    front() {}
+    front() {
+        return this.top;
+    }
 
     /**
      * Determines if the given item is in the queue.
@@ -227,5 +251,24 @@ class QueueNode {
      * @param {any} searchVal
      * @returns {boolean}
      */
-    contains(searchVal) {}
+    contains(searchVal) {
+        if (this.isEmpty()) return false;
+        
+        let curr = this.top;
+        while (curr) {
+            if (curr.data === searchVal) return true;
+            curr = curr.next;
+        }
+
+        return false;
+    }
 }
+
+const test1 = new LinkedListQueue();
+test1.enqueue(1);
+test1.enqueue(2);
+test1.enqueue(3);
+// test1.dequeue();
+console.log(test1);
+// console.log(test1.top);
+// console.log(test1.contains(9));
